@@ -22,11 +22,11 @@ function FileItem({ file }) {
   };
 
   return (
-    <div className='bg-white flex flex-col gap-5 p-6 items-center justify-center rounded-lg shadow-2xl max-w-md mx-auto'>
+    <div className='bg-white flex flex-col gap-5 p-6 items-center justify-center rounded-lg shadow-2xl max-w-md mx-auto mx-2'>
       <div className='flex flex-col gap-2 items-center'>
       <img src='/logo.svg' alt='Logo' style={{width:'50px'}} />
 
-        <h1 className='text-4xl font-semibold text-gray-800 md:text-4xl mt-2'>
+        <h1 className='text-3xl font-semibold text-gray-800 md:text-4xl mt-2'>
           <span className='text-primary'>Download</span> your file here
         </h1>
         <h6 className='text-base text-gray-500 font-medium md:text-lg'>
@@ -36,7 +36,6 @@ function FileItem({ file }) {
       <FileDown className='w-20 h-20 text-primary' />
       <div className='w-full max-w-xs'>
         <h6 className='text-gray-700 mb-2'> File name : {file.fileName}</h6>
-        <h6 className='text-gray-700 mb-2'>File Type : {file.fileType} </h6>
         <h6 className='text-gray-700 mb-2'> File Size : {file.fileSize}</h6>
         {file.password && ( // Only show password field if file requires a password
           <>

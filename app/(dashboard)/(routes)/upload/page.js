@@ -79,8 +79,8 @@ function Upload() {
   }, [fileDocId, router]);
 
   return (
-    <div className='p-5 px-8 md:px-28'>
-      <h2 className='text-[20px] text-center m-5'>
+    <div className='p-5 px-8 md:px-28 mt-10'>
+      <h2 className='text-[20px] text-center mt-10'>
         Start <strong className='text-primary'>Uploading</strong> Files and <strong className='text-primary'>Share</strong> it
       </h2>
       <UploadForm uploadBtnclick={(file) => uploadFile(file)} progress={progress} />

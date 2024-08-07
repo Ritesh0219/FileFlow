@@ -1,5 +1,5 @@
 "use client"
-import { File, Upload } from 'lucide-react'
+import { File, Folder, House, Upload } from 'lucide-react'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -16,8 +16,14 @@ function SideNav() {
         {
             id: 2,
             name: 'Files',
-            icon: File,
-            path: '/files'
+            icon: Folder,
+            path: '/files',
+        },
+        {
+            id: 2,
+            name: 'Home',
+            icon: House,
+            path: '/'
         }
     ]
 
