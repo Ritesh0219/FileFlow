@@ -12,7 +12,7 @@ function Hero() {
 
           <div className="flex justify-center gap-4">
             <a
-              className="rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-primary sm:w-auto"
+              className="rounded-lg bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-primary sm:w-auto"
               href="/upload"
             >
               Get Started

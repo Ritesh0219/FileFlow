@@ -49,7 +49,7 @@ function UploadForm({ uploadBtnclick, progress }) {
   };
 
   return (
-    <div className='mt-12 text-center'>
+    <div className='mt-6 text-center'>
       <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
       <div className="max-w-2xl mx-auto">
         <div className="flex items-center justify-center w-full">
