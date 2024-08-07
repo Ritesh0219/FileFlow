@@ -1,8 +1,8 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { app } from '../../../firebaseConfig';
+import { app } from '../../../../../firebaseConfig';
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
-import FileItem from '../[fileId]/_components/FileItem';
+import FileItem from '../../f/[fileId]/_components/FileItem';
 
 function FileView({ params }) {
   const db = getFirestore(app);
