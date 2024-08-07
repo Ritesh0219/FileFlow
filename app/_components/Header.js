@@ -25,7 +25,7 @@ function Header() {
             <ul className="flex items-center gap-4 text-sm">
               <li>
                 <a
-                  className="text-white bg-primary px-5 py-3 rounded-md transition hover:bg-primary-dark"
+                  className="text-white bg-primary px-2 py-3 rounded-md transition hover:bg-primary-dark"
                   href="/upload"
                 >
                   Get Started

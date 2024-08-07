@@ -5,7 +5,7 @@ function Hero() {
     <div className='flex items-center justify-center bg-white h-[90vh]'>
       <section className="flex flex-col items-center justify-center text-center w-full h-full  max-w-screen-xl">
         <div className="max-w-xl">
-            <h1 className='text-4xl font-extrabold sm:text-5xl mb-5'>Welome to <span className='text-primary'>FileFlow</span></h1>
+            <h1 className='text-4xl font-extrabold sm:text-5xl mb-'>Welome to <span className='text-primary'>FileFlow</span></h1>
           <h1 className="text-3xl font-extrabold sm:text-5xl mb-8">
             <span className='text-primary'>Upload, Save</span> and easily <span className='text-primary'>Share</span> your files in one place
           </h1>
