@@ -1,5 +1,5 @@
 "use client"
-import { File, Folder, House, Upload, User } from 'lucide-react'
+import {  Folder, House, Mail, Upload  } from 'lucide-react'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -22,7 +22,7 @@ function SideNav({ onItemSelect }) { // Accept onItemSelect as a prop
         {
             id: 3, // Ensure unique IDs
             name: 'Contact Us',
-            icon: User,
+            icon: Mail,
             path: '/contact'
         },
         {
