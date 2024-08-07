@@ -14,7 +14,7 @@ function FileShareForm({ file, onPasswordSave }) {
 
     const sendEmail = async () => {
         if (!email) {
-            setAlert({ msg: 'Email is required', type: 'Email' });
+            setAlert({ msg: 'Email is required', type: 'error' });
             return;
         }
 
@@ -30,7 +30,7 @@ function FileShareForm({ file, onPasswordSave }) {
         try {
             const response = await GlobalApi.sendEmail(data);
             console.log(response);
-            setAlert({ msg: 'Email sent successfully!', type: 'success' });
+            setAlert({ msg: 'Email sent successfully!', type: 'Email' });
             setEmail(''); // Clear the email input after sending
         } catch (error) {
             console.error('Error sending email:', error);

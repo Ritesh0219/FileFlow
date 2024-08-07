@@ -5,11 +5,11 @@ function AlertMsg({ msg, type }) {
 
   switch (type) {
     case 'success':
-      bgColor = 'bg-green-600'; // Green background for success
+      bgColor = 'bg-primary'; // Green background for success
       textColor = 'text-white';
       break;
     case 'error':
-      bgColor = 'bg-red-800'; // Red background for error
+      bgColor = 'bg-red-700'; // Red background for error
       textColor = 'text-white';
       break;
     case 'Email':

@@ -1,21 +1,39 @@
-import React from 'react'
+import React from 'react';
 
-function ProgressBar({progress=40}) {
+function ProgressBar({ progress = 0 }) {
+  // Ensure progress is a number between 0 and 100
+  const validProgress = Math.max(0, Math.min(100, progress));
+  
+  // Format the progress to a whole number for display
+  const formattedProgress = Math.round(validProgress);
+
   return (
-    <div className="flex justify-center mt-3">
-      <div className="bg-gray-400 h-5 rounded-md text-[10px] text-white font-bold flex flex-col justify-center items-center" style={{ width: '700px' }}>
-        <div
-          className="bg-primary h-5 rounded-md"
-          style={{ width: `${progress}%`, padding: '0.2px' }}
+    <div className="flex justify-center mt-5 ">
+      <div className="relative w-full max-w-xs">
+        <span id="ProgressLabel" className="sr-only">Loading</span>
+
+        <span
+          role="progressbar"
+          aria-labelledby="ProgressLabel"
+          aria-valuenow={formattedProgress}
+          aria-valuemin="0"
+          aria-valuemax="100"
+          className="relative block rounded-full bg-gray-200"
         >
-          <div className='mt-0.5'>
-          {`${Number(progress).toFixed(0)}%`}
-          </div>
-        </div>
+          <span
+            className="absolute inset-0 flex items-center justify-center text-xs text-white"
+            style={{ width: `${formattedProgress}%` }}
+          >
+          </span>
+
+          <span
+            className="block h-4 rounded-full bg-primary"
+            style={{ width: `${formattedProgress}%` }}
+          ></span>
+        </span>
       </div>
     </div>
-   
-  )
+  );
 }
 
-export default ProgressBar
+export default ProgressBar;
