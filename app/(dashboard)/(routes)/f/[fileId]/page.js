@@ -26,7 +26,7 @@ function FileView({ params }) {
   };
 
   return (
-    <div className='flex flex-col gap-4 justify-center items-center h-screen w-full'>
+    <div className='flex flex-col  justify-center items-center h-[80vh] w-full'>
       {file ? (
         <FileItem file={file} />
       ) : (

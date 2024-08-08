@@ -22,7 +22,7 @@ function FileItem({ file }) {
   };
 
   return (
-    <div className='bg-white flex flex-col gap-5 p-6 items-center justify-center rounded-lg shadow-2xl max-w-md mx-auto mx-2'>
+    <div className='bg-white flex flex-col gap-5 p-6 items-center justify-center rounded-lg shadow-2xl max-w-md'>
       <div className='flex flex-col gap-2 items-center'>
       <img src='/logo.svg' alt='Logo' style={{width:'50px'}} />
 
