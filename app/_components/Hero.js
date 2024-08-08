@@ -19,23 +19,6 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 w-full mt-8">
-          <div className="flex items-center justify-center h-15 sm:h-20 lg:h-20 rounded-lg bg-blue-100 mx-4 sm:mx-6 p-4">
-            <h1 className='text-sm sm:text-base lg:text-lg font-semibold text-primary text-center'>
-              Upload files quickly and easily
-            </h1>
-          </div>
-          <div className="flex items-center justify-center h-15 sm:h-20 lg:h-20 rounded-lg bg-blue-100 mx-4 sm:mx-6 p-4">
-            <h1 className='text-sm sm:text-base lg:text-lg font-semibold text-primary text-center'>
-              Share files securely with a link
-            </h1>
-          </div>
-          <div className="flex items-center justify-center h-15 sm:h-20 lg:h-20 rounded-lg bg-blue-100 mx-4 sm:mx-6 p-4">
-            <h1 className='text-sm sm:text-base lg:text-lg font-semibold text-primary text-center'>
-              Store and access your files anytime
-            </h1>
-          </div>
-        </div>
       </section>
     </div>
   );
