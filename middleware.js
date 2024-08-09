@@ -4,6 +4,7 @@ import { clerkMiddleware,
 const isProtectedRoute = createRouteMatcher([
   '/upload(.*)',
   '/files(.*)',
+
 ]);
 
 

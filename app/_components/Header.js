@@ -13,19 +13,20 @@ function Header() {
 
   return (
     <div>
-      <header className="bg-white dark:bg-gray-900">
+      <header className="bg-white dark:bg-purple-900">
         <div className="flex items-center justify-between mx-4 p-2">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Image src='/logo.svg' width={38} height={100} alt="Logo" />
+            <Image src='/file.png' className='transform hover:scale-105 transition-transform transition-linear-custom duration-10' width={38} height={100} alt="Logo" />
           </div>
+
 
           
           <nav aria-label="Global">
             <ul className="flex items-center gap-4 text-sm">
               <li>
                 <a
-                  className="text-white bg-primary px-4 py-3 hover:bg-blue-800 rounded-lg"
+                  className="text-white bg-primary px-4 py-3 hover:bg-gray-900 rounded-lg"
                   href="/upload"
                 >
                   Get Started

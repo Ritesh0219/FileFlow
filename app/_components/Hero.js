@@ -12,7 +12,8 @@ function Hero() {
 
           <div className="flex justify-center gap-4">
             <a
-              className="rounded-lg bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-primary sm:w-auto"
+              className="rounded-lg  bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-secondary focus:outline-none focus:ring active:bg-primary sm:w-auto
+              transform hover:scale-105 transition-transform transition-linear-custom duration-10"
               href="/upload"
             >
               Get Started

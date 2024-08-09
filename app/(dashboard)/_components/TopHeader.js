@@ -5,7 +5,7 @@ import React from 'react'
 
 function TopHeader({ onMenuClick }) {
   return (
-    <div className='flex gap-6 p-5 border-b items-center justify-between md:justify-end'>
+    <div className='flex  gap-6 p-5 border-b items-center justify-between md:justify-end'>
       {/* Icon for menu toggle (visible only on small screens) */}
       <div>
       <button aria-label="Toggle menu" onClick={onMenuClick} className='md:hidden'>
@@ -15,10 +15,11 @@ function TopHeader({ onMenuClick }) {
       {/* Logo (hidden on larger screens) */}
       <div className='md:hidden'>
         <Image 
-          src='/logo.svg' 
+          src='/file.png' 
           width={38} 
           height={100} 
           alt='Site logo'
+          className='transform hover:scale-105 transition-transform transition-linear-custom duration-10'
         />
       </div>
 

@@ -58,7 +58,7 @@ function Contact() {
      
         <div className="max-w-3xl w-full bg-white p-6 rounded-lg shadow-2xl border border-gray-200">
 
-          <h1 className="text-3xl font-extrabold sm:text-5xl mb-8 text-primary text-center">
+          <h1 className="text-3xl  font-extrabold sm:text-5xl mb-8 text-primary text-center transform hover:scale-105 transition-transform transition-linear-custom duration-10">
             Contact FileFlow
           </h1>
 
@@ -111,7 +111,7 @@ function Contact() {
             <div className="mt-6 flex justify-center">
               <button
                 type="submit"
-                className="w-full sm:w-auto rounded-lg bg-primary px-12 py-3 font-medium text-white text-lg sm:text-xl hover:bg-blue-800"
+                className="w-full sm:w-auto hover:bg-secondary rounded-lg bg-primary px-12 py-3 font-medium text-white text-lg sm:text-xl"
               >
                 Contact
               </button>

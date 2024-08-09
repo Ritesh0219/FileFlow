@@ -89,7 +89,7 @@ function UploadForm({ uploadBtnclick, progress }) {
               <AlertMsg msg="File uploaded successfully!" type="success" />
             </div>
           )}
-          <button disabled={!file || progress > 0} className='p-2 bg-primary text-white w-[25%] rounded-lg mt-5 disabled:bg-gray-500 ' onClick={handleUpload}>
+          <button disabled={!file || progress > 0} className='p-2 bg-primary hover:bg-secondary text-white w-[25%] rounded-lg mt-5 disabled:bg-gray-500 ' onClick={handleUpload}>
             Upload
           </button>
         </>

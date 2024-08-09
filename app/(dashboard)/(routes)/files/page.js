@@ -101,7 +101,7 @@ function Files() {
                   <td className="whitespace-nowrap px-4 py-2 text-center text-xs sm:text-sm md:text-base">
                     <a
                       href={file.shortUrl}  // Change the link to your file's URL or a specific route
-                      className='bg-primary text-white px-6 py-2 rounded-md'
+                      className='bg-primary hover:bg-secondary text-white px-6 py-2 rounded-md'
                      
                     >
                       View
@@ -110,7 +110,7 @@ function Files() {
                   <td className="whitespace-nowrap px-4 py-2 text-center text-xs sm:text-sm md:text-base">
                     <button
                       onClick={() => handleDelete(file.id)}
-                      className='bg-red-600 text-white px-5 py-2 rounded-md'
+                      className='bg-red-600 hover:bg-red-800 text-white px-5 py-2 rounded-md'
                       
                     >
                       Delete
