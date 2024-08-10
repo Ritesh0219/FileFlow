@@ -17,7 +17,7 @@ function TopHeader({ onMenuClick }) {
         <Image 
           src='/file.png' 
           width={38} 
-          height={100} 
+          height={38} 
           alt='Site logo'
           className='transform hover:scale-105 transition-transform transition-linear-custom duration-10'
         />
