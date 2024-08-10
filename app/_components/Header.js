@@ -17,7 +17,7 @@ function Header() {
         <div className="flex items-center justify-between mx-4 p-2">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Image src='/file.png' className='transform hover:scale-105 transition-transform transition-linear-custom duration-10' width={38} height={100} alt="Logo" />
+            <Image src='/file.png' className='transform hover:scale-105 transition-transform transition-linear-custom duration-10' width={38} height={38} alt="Logo" />
           </div>
 
 
