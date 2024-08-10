@@ -9,7 +9,7 @@ export default function Page() {
           <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6 hidden lg:flex">
             <img
               alt="Background"
-              src="./logo.svg"
+              src="/file.png"
               className="absolute inset-0 h-full w-full object-cover opacity-80"
             />
 
@@ -40,8 +40,8 @@ export default function Page() {
                 </a>
                 <img
                   alt="FileFlow Logo"
-                  src="./logo.svg"
-                  className="h-24 w-auto mx-auto"
+                  src="/file.png"
+                  className="h-16 w-auto mx-auto"
                 />
 
                 <h1 className="mt-5 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl flex items-center justify-center">
