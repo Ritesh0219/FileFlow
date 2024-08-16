@@ -7,7 +7,7 @@ function Hero() {
         <div className="max-w-xl">
           <h1 className='text-4xl font-extrabold sm:text-5xl mb-4'>Welcome to <span className='text-primary'>FileFlow</span></h1>
           <h1 className="text-3xl font-extrabold sm:text-5xl mb-8">
-            <span className='text-primary'>Upload, Save</span> and easily <span className='text-primary'>Share</span> your files in one place
+            <span className='text-primary'>Upload, Save</span> and <span className='text-primary'>Share</span> your files in one place
           </h1>
 
           <div className="flex justify-center gap-4">
