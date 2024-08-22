@@ -4,8 +4,8 @@ import FilePreview from './FilePreview';
 import ProgressBar from './ProgressBar';
 
 function UploadForm({ uploadBtnclick, progress }) {
-  const [file, setFile] = useState();
-  const [errorMsg, setErrorMsg] = useState();
+  const [file, setFile] = useState(null);
+  const [errorMsg, setErrorMsg] = useState(null);
   const [showSuccess, setShowSuccess] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ function UploadForm({ uploadBtnclick, progress }) {
         setFile(null); // Reset file state
         const fileInput = document.getElementById('dropzone-file');
         if (fileInput) fileInput.value = ''; // Reset file input
-      }, 3000);
+      }, 2000);
       return () => clearTimeout(timer); // Cleanup timer on unmount
     }
   }, [progress]);
@@ -27,15 +27,14 @@ function UploadForm({ uploadBtnclick, progress }) {
       // Set a timeout to hide error message after 3 seconds
       const timer = setTimeout(() => {
         setErrorMsg(null);
-      }, 3000);
+      }, 2000);
       return () => clearTimeout(timer); // Cleanup timer on unmount
     }
   }, [errorMsg]);
 
-  const onFileSelect = (file) => {
-    console.log(file);
+  const onFileSelect = (event) => {
+    const file = event.target.files[0];
     if (file && file.size > 10000000) {
-      console.log('Size is greater than 10 MB');
       setErrorMsg('Maximum File Upload size is 10MB');
       return;
     }
@@ -44,8 +43,10 @@ function UploadForm({ uploadBtnclick, progress }) {
   };
 
   const handleUpload = () => {
-    uploadBtnclick(file);
-    setShowSuccess(false); // Hide the success message on new upload
+    if (file) {
+      uploadBtnclick(file);
+      setShowSuccess(false); // Hide the success message on new upload
+    }
   };
 
   return (
@@ -63,7 +64,7 @@ function UploadForm({ uploadBtnclick, progress }) {
               </p>
               <p className="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (Max Size 10 MB)</p>
             </div>
-            <input id="dropzone-file" type="file" className="hidden" onChange={(event) => onFileSelect(event.target.files[0])} />
+            <input id="dropzone-file" type="file" className="hidden" onChange={onFileSelect} />
           </label>
         </div>
         <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
@@ -89,7 +90,7 @@ function UploadForm({ uploadBtnclick, progress }) {
               <AlertMsg msg="File uploaded successfully!" type="success" />
             </div>
           )}
-          <button disabled={!file || progress > 0} className='p-2 bg-primary hover:bg-secondary text-white w-[25%] rounded-lg mt-5 disabled:bg-gray-500 ' onClick={handleUpload}>
+          <button disabled={!file || progress > 0} className='p-2 bg-primary hover:bg-secondary text-white w-[25%] rounded-lg mt-5 disabled:bg-gray-500' onClick={handleUpload}>
             Upload
           </button>
         </>
